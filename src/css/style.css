@@ -1,0 +1,41 @@
+.clearfix::after { 
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+nav {
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+nav li {
+	float: left;
+	width: 33.33%
+}
+
+nav a {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #76e1e1;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #a4f2f2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
