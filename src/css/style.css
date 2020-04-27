@@ -38,8 +38,8 @@ a {
 	color: black;
 }
 /* Edits maps size and position*/
-#map{
-	height: 400px;
+html, body, #map{
+	height: 100%;
 	width: 100%;
 }
 
