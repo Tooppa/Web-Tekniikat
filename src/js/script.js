@@ -18,4 +18,20 @@ function initMap() {
     marker.addListener('click', function() {
         infoWindow.open(map, marker)
     });
+	
+	//
 }
+
+function changeClass(evt) {
+	nav.setAttribute('class', 'nav_active');
+}
+
+/* Slide the nav to the screen */
+const navSlide = function() {
+	const nav_button = document.querySelector('.nav_button');
+	const nav_links = document.querySelector('.nav_links');
+	
+	nav_button.addEventListener('click', changeClass);
+}
+
+navSlide();
