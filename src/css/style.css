@@ -118,8 +118,8 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 }
 /*edits buttons and text element in the facts page*/
 .generator {
-	padding: 1%;
 	text-align: center;
+	margin-top: 5%;
 }
 /*buttons in the facts page*/
 #vitsi, #fakta {
