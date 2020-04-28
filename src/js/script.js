@@ -22,16 +22,12 @@ function initMap() {
 	//
 }
 
+/*switches the nav-active on/off for the navigation bar*/
 function changeClass(evt) {
-	nav.setAttribute('class', 'nav_active');
+	nav.classList.toggle('nav-active');
 }
 
-/* Slide the nav to the screen */
-const navSlide = function() {
-	const nav_button = document.querySelector('.nav_button');
-	const nav_links = document.querySelector('.nav_links');
-	
-	nav_button.addEventListener('click', changeClass);
-}
+const nav_button = document.querySelector('.nav_button');
+const nav = document.querySelector('.nav_links');
 
-navSlide();
+nav_button.addEventListener('click', changeClass); 

@@ -1,7 +1,7 @@
 .clearfix::after { 
-	content: "";
+	/*content: "";
 	clear: both;
-	display: table;
+	display: table;*/
 }
 
 /*set all things to having no padding and no margin, those will be implemented later
@@ -74,14 +74,12 @@ html, body, #map{
 	width: 100%;
 }
 
-/*@media rule is used to apply different styles for different media types. 
+/* @media rule is used to apply different styles for different media types. 
 in short, "when screen width is under 768px, do this style"
-more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp 
-top property will align the links right belov the nav bar*/
+more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 @media screen and (max-width:768px){
 	/* this hides everything that goes over the browser size, 
-	this will hide the navigation bar that is set to the right
-	of the viewport in "transformX" attribute */
+	this will hide the navigation bar that is in the right of the screen*/
 	body {
 		overflow: hidden;
 	}
@@ -90,12 +88,13 @@ top property will align the links right belov the nav bar*/
 		position: absolute;
 		right: 0px;
 		height: 92vh;
-		width: 50%;
+		/* top property will align the links right belov the nav bar */
 		top: 8vh;
 		background-color: #9DC9DC;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 50%;
 		/* moves the links to the right of the screen, 
 		so they are not visible */
 		transform: translateX(100%);
@@ -108,9 +107,9 @@ top property will align the links right belov the nav bar*/
 		display: block;
 		cursor: pointer;
 	}
-	
-	.nav-active {
-		transformX(0%);
-	}
+
 }
 
+.nav-active {
+	transform: translateX(0%);
+}
