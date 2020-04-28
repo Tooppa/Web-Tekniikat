@@ -20,7 +20,6 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
 	background-color: #9DC9DC;
 }
 
@@ -68,9 +67,13 @@ a {
 	text-decoration: none;
 	color: black;
 }
-/* Edits maps size and position*/
-html, body, #map{
+html, body{
 	height: 100%;
+	width: 100%;
+}
+/* Edits maps size and position*/
+#map{
+	height: calc(100% - 61px);
 	width: 100%;
 }
 
