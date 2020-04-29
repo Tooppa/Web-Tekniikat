@@ -73,12 +73,31 @@ html, body{
 	width: 100%;
 }
 /* Edits maps size and position*/
-#map{
+/*#map{
 	height: calc(100% - 61px);
 	width: 100%;
 	position: fixed;
 	z-index: 0;
-}
+}*/
+#map {
+	height: calc(100% - 61px);
+	width: 100%;
+	position:absolute;
+	left: 0;
+	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+  
+  #contactform {
+	position: relative;
+	z-index: 1; /* The z-index should be higher than Google Maps */
+	width: 20%;
+	margin-left: 0px ;
+	padding: 0px;
+	height: calc(100% - 61px);
+	opacity: .90; /* Set the opacity for a slightly transparent Google Form */
+
+	overflow:hidden; overflow-y:scroll;
+  }
 
 /* @media rule is used to apply different styles for different media types. 
 in short, "when screen width is under 768px, do this style"
@@ -156,3 +175,39 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 }
 #media {
 }
+
+.none {
+	list-style: none;
+}
+.image {
+
+	width: 250px;
+	width: 290px;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 85%;
+	width: 100px;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+  .container {
+	position: relative;
+	width: 50%;
+  }
+  
