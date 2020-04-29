@@ -84,7 +84,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	/* this hides everything that goes over the browser size, 
 	this will hide the navigation bar that is in the right of the screen*/
 	body {
-		overflow: hidden;
+		//overflow: hidden;
 	}
 	
 	.nav_links {
