@@ -94,7 +94,7 @@ html, body{
 	margin-left: 0px ;
 	padding: 0px;
 	height: calc(100% - 61px);
-	opacity: .90; /* Set the opacity for a slightly transparent Google Form */
+	opacity: 1; 
 
 	overflow:hidden; overflow-y:scroll;
   }
@@ -196,11 +196,12 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	left: 100%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-
+	
   }
   
   .container:hover .image {
-	opacity: 0.3;
+	opacity: 0.9;
+
   }
   
   .container:hover .middle {
@@ -211,3 +212,5 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	width: 50%;
   }
   
+	
+}
