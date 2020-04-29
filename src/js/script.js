@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
     //Element containing coordinates
     var karaportti = { lat: 60.224289, lng: 24.758614 };
     //Creates a map with zoom lvl 12 centered around karaportti
@@ -20,7 +20,7 @@ function initMap() {
     });
 	
 	//
-}
+}/*
 
 /*switches the nav-active on/off for the navigation bar*/
 function changeClass(evt) {
