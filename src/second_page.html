@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Projekti sivu 2</title>
-    <link href="css/style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Projekti sivu 2</title>
+	<link href="css/style.css" rel="stylesheet">
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+	<!-- Navigation bar -->
 	<nav class="clearfix">
-		<ul>
-			<li><a href="index.html">Koti</a></li>
-			<li><a href="">Joku cool sivu</a></li>
-			<li><a href="third_page.html">toinen cool sivu</a></li>			
+		<h4>Projekti</h4>
+		<ul class="nav_links">
+			<li><a href="index.html">Nähtävyydet</a></li>
+			<li><a href="">Faktoja</a></li>
+			<li><a href="third_page.html">Sivu</a></li>
 		</ul>
+		<!-- This is the navigation button that will be shown in mobile view -->
+		<div class="nav_button">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
 	</nav>
 	<!-- Kuva upotettu iframeen, Kuvan oikeasta yläkulmasta klikkaamalla aukeaa kartta ja kartan/tai kuvan vasemmasta alakulmasta aukeaa kuva-->
     <div style="position:relative;"><iframe frameborder="0" scrolling="no" width="640px" height="427px"
@@ -40,5 +52,18 @@
 	 </div>
 
     <script src="js/script.js"></script>
+	<div class="generator">
+		<p>Alla olevat napit etsivät internetistä satunnaisesti vitsin tai faktan.</p>
+		<p>Vitsit kerätään osoitteesta http://api.icndb.com/jokes/random</p>
+		<p>Faktat kerätään osoitteesta https://uselessfacts.jsph.pl/random.json?language=en</p>
+		<!-- buttons and text fields for facts and jokes -->
+		<button id="vitsi" onclick="newJoke()">Uusi vitsi</button>
+		<p id="vitsiTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu chuck norris vitsi</p>
+		<button id="fakta" onclick="newFact()">Uusi fakta</button>
+		<p id="faktaTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu fakta</p>
+	</div>
+
+	<script src="js/scriptSecond.js"></script>
 </body>
+
 </html>

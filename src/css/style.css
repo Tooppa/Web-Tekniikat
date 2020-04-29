@@ -1,14 +1,26 @@
 .clearfix::after { 
-	content: "";
+	/*content: "";
 	clear: both;
-	display: table;
+	display: table;*/
 }
 
+/*set all things to having no padding and no margin, those will be implemented later
+also set font-family attribute, we can change this later*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Baloo Bhaina 2', system-ui,-apple-system;
+}
 
+/* display flex will line up the h4 element and ul element next to each other.
+justify-content: space-around will put some space between those elements.
+align items center the items vertically */
 nav {
-	overflow: hidden;
-	width: 100%;
-	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #9DC9DC;
 }
 
 ul {
@@ -16,31 +28,110 @@ ul {
 	padding-left: 0;
 }
 
-nav li {
-	float: left;
-	width: 33.33%
+
+/* Letter spacing adds space between letters */
+h4 {
+	font-size: 30px;
+	letter-spacing: 3px;
 }
 
-nav a {
-	display: block;
-	font-size: 1.2em;
-	text-align: center;
-	background-color: #76e1e1;
-	padding: 10px;
+/* Flex will line up the items in navigation ul list next to each other 
+display flex with justify content space-around allows us to 
+*/
+.nav_links {
+	display: flex;
+	justify-content: space-around;
+	width:40%;
+	letter-spacing: 2px;
 }
+
+/* hide the nav button while in computer view */
+.nav_button{
+	display: none;
+}
+
+/*this will make the nav button */
+.nav_button div{
+	width: 25px;
+	height: 4px;
+	background-color: black;
+	margin: 5px;
+}
+
 
 nav a:hover {
 	background-color: #a4f2f2;
 }
-
+/* Remmoves underlining from links and makes them black */
 a {
 	text-decoration: none;
 	color: black;
 }
-/* Edits maps size and position*/
-html, body, #map{
+html, body{
 	height: 100%;
 	width: 100%;
 }
+/* Edits maps size and position*/
+#map{
+	height: calc(100% - 61px);
+	width: 100%;
+}
 
+/* @media rule is used to apply different styles for different media types. 
+in short, "when screen width is under 768px, do this style"
+more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media screen and (max-width:768px){
+	/* this hides everything that goes over the browser size, 
+	this will hide the navigation bar that is in the right of the screen*/
+	body {
+		overflow: hidden;
+	}
+	
+	.nav_links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		/* top property will align the links right belov the nav bar */
+		top: 8vh;
+		background-color: #9DC9DC;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		/* moves the links to the right of the screen, 
+		so they are not visible */
+		transform: translateX(100%);
+		/* Transition will transition between the two "transform" attributes
+		in 0.5 seconds. ease-in option means that it has a slow start. */
+		transition: transform 0.5s ease-in;
+	}
+	
+	.nav_button {
+		display: block;
+		cursor: pointer;
+	}
 
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+/*edits buttons and text element in the facts page*/
+.generator {
+	text-align: center;
+	margin-top: 5%;
+}
+/*buttons in the facts page*/
+#vitsi, #fakta {
+	border: 1px solid;
+	background: none;
+	width: 8em;
+	padding: 1%;
+	font-size: 20px;
+	margin: 10px;
+	transition: 0.5s;
+}
+/*creates hover effect to the buttons in the facts page*/
+#vitsi:hover, #fakta:hover {
+	background: #9DC9DC;
+}

@@ -18,5 +18,16 @@ function initMap() {
     marker.addListener('click', function() {
         infoWindow.open(map, marker)
     });
+	
+	//
 }
 
+/*switches the nav-active on/off for the navigation bar*/
+function changeClass(evt) {
+	nav.classList.toggle('nav-active');
+}
+
+const nav_button = document.querySelector('.nav_button');
+const nav = document.querySelector('.nav_links');
+
+nav_button.addEventListener('click', changeClass); 
