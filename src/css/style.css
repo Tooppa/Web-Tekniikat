@@ -118,7 +118,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 }
 /*edits buttons and text element in the facts page*/
 .generator {
-	margin-top: 5%;
+	padding-top: 2%;
 	max-width: 75ch;
 	margin: auto;
 	text-align: center;
@@ -136,4 +136,13 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 /*creates hover effect to the buttons in the facts page*/
 #vitsi:hover, #fakta:hover {
 	background: #9DC9DC;
+}
+/*controls video on the third screen*/
+#video {
+	padding-top: 2%;
+	width: 100%;
+	height: calc(100% - 61px);
+	text-align: center;
+}
+#media {
 }
