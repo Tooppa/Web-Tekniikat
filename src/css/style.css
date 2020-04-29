@@ -43,6 +43,7 @@ display flex with justify content space-around allows us to
 	justify-content: space-around;
 	width:40%;
 	letter-spacing: 2px;
+	z-index: 2;
 }
 
 /* hide the nav button while in computer view */
@@ -75,6 +76,8 @@ html, body{
 #map{
 	height: calc(100% - 61px);
 	width: 100%;
+	position: fixed;
+	z-index: 0;
 }
 
 /* @media rule is used to apply different styles for different media types. 
@@ -84,15 +87,15 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	/* this hides everything that goes over the browser size, 
 	this will hide the navigation bar that is in the right of the screen*/
 	body {
-		//overflow: hidden;
+		overflow: hidden;
 	}
 	
 	.nav_links {
 		position: absolute;
 		right: 0px;
-		height: 92vh;
+		height: 93%;
 		/* top property will align the links right belov the nav bar */
-		top: 8vh;
+		top: 7%;
 		background-color: #9DC9DC;
 		display: flex;
 		flex-direction: column;
@@ -103,25 +106,32 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 		transform: translateX(100%);
 		/* Transition will transition between the two "transform" attributes
 		in 0.5 seconds. ease-in option means that it has a slow start. */
-		transition: transform 0.5s ease-in;
+		
+		
 	}
 	
 	.nav_button {
 		display: block;
 		cursor: pointer;
 	}
+	
+	/*this is separately so that the transformation doesn't happen when the screen is resized*/
+	.nav_links {
+		transition: transform 0.5s ease-in;
+	}
 
 }
 
 .nav-active {
+	transition: transform 0.5s ease-in;
 	transform: translateX(0%);
 }
 /*edits buttons and text element in the facts page*/
 .generator {
-	margin-top: 5%;
-	max-width: 75ch;
-	margin: auto;
 	text-align: center;
+	margin-top: 5%;
+	position: relative;
+	z-index: 1;
 }
 /*buttons in the facts page*/
 #vitsi, #fakta {
