@@ -149,7 +149,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 		right: 0px;
 		height: 93%;
 		/* top property will align the links right belov the nav bar */
-		top: 7%;
+		top: 61px;
 		background-color: #9DC9DC;
 		display: flex;
 		flex-direction: column;
