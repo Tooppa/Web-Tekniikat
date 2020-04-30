@@ -50,6 +50,18 @@ function initMap() {
             koordinaatit: { lat: 60.174575, lng: 24.984599398411612 },
             image: '<img id="4" src="images/tiger-1415765_640.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 14,
+            koordinaatit: { lat: 61.128363, lng: 21.510334 },
+            image: '<img id="5" src="images/Rauma.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 14,
+            koordinaatit: { lat: 64.240475, lng: 23.817389 },
+            image: '<img id="6" src="images/Kalajoki.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         }
     ];
 
@@ -84,7 +96,9 @@ function isonna(id) {
         'images/suomenlinna-Suuri.jpg',
         'images/helsinki-Suuri.jpg',
         'images/vantaankoski-Suuri.jpg',
-        'images/tiger-Suuri.jpg'
+        'images/tiger-Suuri.jpg',
+        'images/Rauma.jpg',
+        'images/Kalajoki.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
