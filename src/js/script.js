@@ -1,11 +1,9 @@
-/*
-function initMap() {
 
 var luku = 1;
 function sijainti(clicked) {
     luku = clicked;
     initMap();  
-} */
+} 
  
 function initMap() {
 
