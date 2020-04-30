@@ -1,4 +1,4 @@
-/*function initMap() {
+function initMap() {
     //Element containing coordinates
     var karaportti = { lat: 60.224289, lng: 24.758614 };
     //Creates a map with zoom lvl 12 centered around karaportti
@@ -20,17 +20,5 @@
     });
 	
 	//
-}/*
-
-/*switches the nav-active on/off for the navigation bar*/
-function changeClass(evt) {
-	nav.classList.toggle('nav-active');
-	//map.classList.toggle('resize-map')
 }
 
-const nav_button = document.querySelector('.nav_button');
-const nav = document.querySelector('.nav_links');
-//const map = document.getElementById('map');
-
-
-nav_button.addEventListener('click', changeClass); 
