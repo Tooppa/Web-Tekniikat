@@ -2,6 +2,7 @@
 var luku = 1;
 function sijainti(clicked) {
     luku = clicked;
+
     initMap();
 }
 var span = document.getElementsByClassName("close")[0];
@@ -11,6 +12,7 @@ span.onclick = function () {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
 }
+
 
 function initMap() {
     //coordinates and images
@@ -31,9 +33,8 @@ function initMap() {
             info: '<p>Avaa isompana painamalla kuvaa</p>'
         },
         {
-            koordinaatit: { lat: 60.2933611820065, lng: 24.86453741574194 },
-            image: '<img id="3" src="images/vantaankoski-1710134_640.jpg" width="300" height="200" onclick="isonna(id)"></img>',
-            info: '<p>Avaa isompana painamalla kuvaa</p>'
+            koordinaatit: { lat: 60.2933611820065, lng: 24.86623741574194 },
+            image: '<img src="images/vantaankoski-1710134_640.jpg" width="300" height="200"></img>'
         },
         {
             koordinaatit: { lat: 60.174575, lng: 24.984599398411612 },
@@ -81,10 +82,4 @@ function isonna(id) {
     popupImage.src = images[id];
 }
 
-/*switches the nav-active on/off for the navigation bar*/
-function changeClass(evt) {
-    nav.classList.toggle('nav-active');
-    //map.classList.toggle('resize-map')
-
-}
 
