@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Projekti</title>
-    <link href="css/style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Projekti</title>
+	<link href="css/style.css" rel="stylesheet">
 	<!-- link to google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	
+
 	<!-- Navigation bar -->
 	<nav class="clearfix">
 		<h4>Projekti</h4>
 		<ul class="nav_links">
 			<li><a href="index.html">Nähtävyydet</a></li>
 			<li><a href="second_page.html">Faktoja</a></li>
-			<li><a href="third_page.html">Sivu</a></li>				
+			<li><a href="third_page.html">Sivu</a></li>
 		</ul>
 		<!-- This is the navigation button that will be shown in mobile view -->
 		<div class="nav_button">
@@ -26,34 +28,61 @@
 	</nav>
 	<!-- Map element -->
 	<div id='map'></div>
+	<!-- Pop up window -->
+	<div id="popup">
+		<span class="close">&times;</span>
+		<img class="popupImage" id="popupImage">
+	  </div>	  
+	<!-- Gallery -->
 	<div id="contactform">
 		<nav>
-		<ul class="none">
-			<li><div class="container"><img src="images/helsinki-4984737_640.jpg" class="image"><div class="middle">
-				<button id="2" onclick="sijainti(this.id)">Map Location</button>
-			  </div></div></li>
-			  <li><div class="container"><img src="images/sibelius-4738705_640.jpg" class="image"><div class="middle">
-				<button id="0" onclick="sijainti(this.id)">Map Location</button>
-			  </div></div></li>
-			  <li><div class="container"><img src="images/suomenlinna-334371_640.jpg" class="image"><div class="middle">
-				<button id="1" onclick="sijainti(this.id)">Map Location</button>
-			  </div></div></li>
-			  <li><div class="container"><img src="images/vantaankoski-1710134_640.jpg" class="image"><div class="middle">
-				<button id="3" onclick="sijainti(this.id)">Map Location</button>
-			  </div></div></li>
-			  <li><div class="container"><img src="images/tiger-1415765_640.jpg" class="image"><div class="middle">
-				<button id="4" onclick="sijainti(this.id)">Map Location</button>
-			  </div></div></li>
-		</ul>
+			<ul class="none">
+				<li>
+					<div class="container"><img src="images/helsinki-4984737_640.jpg" class="image">
+						<div class="middle">
+							<button class="imageButton" id="2" onclick="sijainti(this.id)">Map Location</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="container"><img src="images/sibelius-4738705_640.jpg" class="image">
+						<div class="middle">
+							<button class="imageButton" id="0" onclick="sijainti(this.id)">Map Location</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="container"><img src="images/suomenlinna-334371_640.jpg" class="image">
+						<div class="middle">
+							<button class="imageButton" id="1" onclick="sijainti(this.id)">Map Location</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="container"><img src="images/vantaankoski-1710134_640.jpg" class="image">
+						<div class="middle">
+							<button class="imageButton" id="3" onclick="sijainti(this.id)">Map Location</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="container"><img src="images/tiger-1415765_640.jpg" class="image">
+						<div class="middle">
+							<button class="imageButton" id="4" onclick="sijainti(this.id)">Map Location</button>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</nav>
 	</div>
-    
+
 	<script src="js/script.js"></script>
 
 	<!-- Google maps api. It calls function initMap() from sript.js-->
 	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAte-8naFIgom8YefcveX1fwp_DBfIkKoM&callback=initMap">
-    </script>
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAte-8naFIgom8YefcveX1fwp_DBfIkKoM&callback=initMap">
+		</script>
 	<script src="js/navScript.js"></script>
 </body>
+
 </html>
