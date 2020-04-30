@@ -80,9 +80,9 @@ function initMap() {
 }
 function isonna(id) {
     const images = [
-        '../src/images/sibelius-4738705_640.jpg',
-        '../src/images/suomenlinna-Suuri.jpg',
-        '../src/images/helsinki-Suuri.jpg',
+        'images/sibelius-Suuri.jpg',
+        'images/suomenlinna-Suuri.jpg',
+        'images/helsinki-Suuri.jpg',
         'images/vantaankoski-Suuri.jpg',
         'images/tiger-Suuri.jpg'
     ];
