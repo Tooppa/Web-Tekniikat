@@ -81,7 +81,7 @@ html, body{
 }*/
 #map {
 	height: calc(100% - 61px);
-	width: 100%;
+	width: 80%;
 	position:absolute;
 	left: 0;
 	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
@@ -91,7 +91,7 @@ html, body{
 	position: relative;
 	z-index: 1; /* The z-index should be higher than Google Maps */
 	width: 20%;
-	margin-left: 0px ;
+	margin-left: 80% ;
 	padding: 0px;
 	height: calc(100% - 61px);
 	opacity: 1; 
@@ -201,7 +201,6 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
   
   .container:hover .image {
 	opacity: 0.9;
-
   }
   
   .container:hover .middle {
@@ -212,5 +211,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	width: 50%;
   }
   
-	
-}
+  button {
+	background-color: #9DC9DC;
+  }
+

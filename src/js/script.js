@@ -3,7 +3,7 @@ function sijainti(clicked) {
     luku = clicked;
     initMap();  
   }
-var koordinaatit=[{ lat: 60.182215, lng: 24.913401 },{ lat: 60.144491, lng: 24.989855 },{ lat: 60.170495, lng: 24.952144 }];
+
 function initMap() {
 
     //Element containing coordinates
@@ -40,11 +40,20 @@ function initMap() {
         {
             koordinaatit: { lat: 60.170495, lng: 24.952144 },
             image: '<img src="../src/images/helsinki-4984737_640.jpg" width="300" height="200"></img>'
+        },
+        {
+            koordinaatit: { lat: 60.2933611820065, lng: 24.86453741574194 },
+            image: '<img src="images/vantaankoski-1710134_640.jpg" width="300" height="200"></img>'
+        },
+        {
+            koordinaatit: { lat: 60.174575, lng: 24.984599398411612 },
+            image: '<img src="images/tiger-1415765_640.jpg" width="300" height="200"></img>'
         }
     ];
+   
     //Creates a map with zoom lvl 12 centered around first element of array
     var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 13, center: markers[luku].koordinaatit });
+        document.getElementById('map'), { zoom: 14, center: markers[luku].koordinaatit });
     // creates markers from array
     function addMarker(props) {
         var marker = new google.maps.Marker({
