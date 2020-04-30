@@ -1,3 +1,6 @@
+
+function initMap() {
+
 var luku = 1;
 function sijainti(clicked) {
     luku = clicked;
@@ -5,6 +8,7 @@ function sijainti(clicked) {
   }
 
 function initMap() {
+
 
     //Element containing coordinates
     var karaportti = { lat: 60.224289, lng: 24.758614 };
@@ -25,7 +29,7 @@ function initMap() {
     marker.addListener('click', function() {
         infoWindow.open(map, marker)
     });
-	
+
 	
     //coordinates and images
     var markers = [
@@ -81,11 +85,6 @@ function initMap() {
 function changeClass(evt) {
     nav.classList.toggle('nav-active');
     //map.classList.toggle('resize-map')
+
 }
 
-const nav_button = document.querySelector('.nav_button');
-const nav = document.querySelector('.nav_links');
-//const map = document.getElementById('map');
-
-
-nav_button.addEventListener('click', changeClass); 
