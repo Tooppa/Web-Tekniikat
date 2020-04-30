@@ -1,12 +1,12 @@
-
+/*
 function initMap() {
 
 var luku = 1;
 function sijainti(clicked) {
     luku = clicked;
     initMap();  
-  }
-
+} */
+ 
 function initMap() {
 
 
@@ -28,7 +28,7 @@ function initMap() {
     //Adds listener to marker and opens infowindow
     marker.addListener('click', function() {
         infoWindow.open(map, marker)
-    });
+    }); 
 
 	
     //coordinates and images
@@ -81,10 +81,4 @@ function initMap() {
       }
 }
 
-/*switches the nav-active on/off for the navigation bar*/
-function changeClass(evt) {
-    nav.classList.toggle('nav-active');
-    //map.classList.toggle('resize-map')
-
-}
 
