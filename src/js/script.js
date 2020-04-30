@@ -80,7 +80,7 @@ function initMap() {
 }
 function isonna(id) {
     const images = [
-        '../src/images/sibelius-4738705_640.jpg',
+        '../src/images/sibelius-Suuri.jpg',
         '../src/images/suomenlinna-Suuri.jpg',
         '../src/images/helsinki-Suuri.jpg',
         'images/vantaankoski-Suuri.jpg',
