@@ -20,7 +20,6 @@ function initMap() {
         {
             zoom:10,
             koordinaatit: { lat: 60.182215, lng: 24.913401 },
-
         },
         {
             zoom:14,
@@ -43,7 +42,7 @@ function initMap() {
         {
             zoom : 14,
             koordinaatit: { lat: 60.2933611820065, lng: 24.86623741574194 },
-            image: '<img id="3"src="images/vantaankoski-1710134_640.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            image: '<img id="3" src="images/vantaankoski-1710134_640.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
         },
         {
@@ -82,10 +81,10 @@ function initMap() {
 function isonna(id) {
     const images = [
         '../src/images/sibelius-4738705_640.jpg',
-        '../src/images/suomenlinna-334371_640.jpg',
-        '../src/images/helsinki-4984737_640.jpg',
-        'images/vantaankoski-1710134_640.jpg',
-        'images/tiger-1415765_640.jpg'
+        '../src/images/suomenlinna-Suuri.jpg',
+        '../src/images/helsinki-Suuri.jpg',
+        'images/vantaankoski-Suuri.jpg',
+        'images/tiger-Suuri.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
