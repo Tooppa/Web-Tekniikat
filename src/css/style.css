@@ -218,7 +218,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	position: absolute;
 	bottom: 0;
 	width: 100px;
-	left: 110%;
+	left: 105%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	
