@@ -29,14 +29,21 @@
 
     <script src="js/script.js"></script>
 	<div class="generator">
-		<p>Alla olevat napit etsivät internetistä satunnaisesti vitsin tai faktan.</p>
-		<p>Vitsit kerätään osoitteesta http://api.icndb.com/jokes/random</p>
-		<p>Faktat kerätään osoitteesta https://uselessfacts.jsph.pl/random.json?language=en</p>
+		<div>
+			<p>Alla olevat napit etsivät internetistä satunnaisesti vitsin tai faktan.</p>
+			<p>Vitsit kerätään osoitteesta http://api.icndb.com/jokes/random</p>
+			<p>Faktat kerätään osoitteesta https://uselessfacts.jsph.pl/random.json?language=en</p>
+		</div>
 		<!-- buttons and text fields for facts and jokes -->
+		
 		<button id="vitsi" onclick="newJoke()">Uusi vitsi</button>
-		<p id="vitsiTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu chuck norris vitsi</p>
+		<div class="tekstiContainer">
+			<p id="vitsiTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu chuck norris vitsi</p>
+		</div>
 		<button id="fakta" onclick="newFact()">Uusi fakta</button>
-		<p id="faktaTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu fakta</p>
+		<div class="tekstiContainer">
+			<p id="faktaTeksti">Paina yllä olevaa nappia saadaksesi satunnaisesti valittu fakta</p>
+		</div>
 	</div>
 
 	<script src="js/scriptSecond.js"></script>

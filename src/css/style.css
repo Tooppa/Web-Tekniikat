@@ -218,6 +218,25 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 #vitsi:hover, #fakta:hover , .imageButton:hover{
 	background: #9DC9DC;
 }
+
+/* A container for the text in the facts page */
+.tekstiContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	padding: 30px;
+	background: #9DC9DC;
+	border-radius: 3px;
+	
+}
+
+.header {
+	text-align: center;
+	padding: 30px;
+}
+
 /* controls video on the third screen */
 #video {
 	position: relative;
