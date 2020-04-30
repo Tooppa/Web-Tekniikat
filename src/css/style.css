@@ -252,13 +252,13 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	height: 100%;
 	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-/* Modal Content (image) */
+/* popup Content image */
 .popupImage {
 	margin: auto;
-	padding-top: 7%;
 	display: block;
-	width: 80%;
-	max-width: 900px;
+	padding-top: 2%;
+	height: 80%;
+	max-height: 800px;
 }
   /* The Close Button */
 .close {
