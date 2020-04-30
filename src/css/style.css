@@ -256,7 +256,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 .popupImage {
 	margin: auto;
 	display: block;
-	padding-top: 2%;
+	padding-top: 0%;
 	height: 80%;
 	max-height: 800px;
 }
