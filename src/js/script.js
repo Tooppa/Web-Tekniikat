@@ -44,7 +44,7 @@ function initMap() {
             image: '<img src="../src/images/helsinki-4984737_640.jpg" width="300" height="200"></img>'
         },
         {
-            koordinaatit: { lat: 60.2933611820065, lng: 24.86453741574194 },
+            koordinaatit: { lat: 60.2933611820065, lng: 24.86623741574194 },
             image: '<img src="images/vantaankoski-1710134_640.jpg" width="300" height="200"></img>'
         },
         {
