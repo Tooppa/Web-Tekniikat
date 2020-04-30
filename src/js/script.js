@@ -20,7 +20,6 @@ function initMap() {
         {
             zoom:10,
             koordinaatit: { lat: 60.182215, lng: 24.913401 },
-
         },
         {
             zoom:14,
