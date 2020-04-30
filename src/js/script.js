@@ -43,7 +43,8 @@ function initMap() {
         {
             zoom : 14,
             koordinaatit: { lat: 60.2933611820065, lng: 24.86623741574194 },
-            image: '<img src="images/vantaankoski-1710134_640.jpg" width="300" height="200"></img>'
+            image: '<img id="3"src="images/vantaankoski-1710134_640.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         },
         {
             zoom: 14,
