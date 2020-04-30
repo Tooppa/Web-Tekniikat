@@ -139,7 +139,6 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	.nav_links {
 		transition: transform 0.5s ease-in;
 	}
-
 }
 
 .nav-active {
@@ -191,7 +190,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	top: 8vh;
 	justify-content: center;
 	align-items: center;
-	//height: calc(100% - 61px);
+	/*height: calc(100% - 61px);*/
 }
 #media {
 	position: absolute;
