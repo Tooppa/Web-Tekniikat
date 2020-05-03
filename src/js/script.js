@@ -105,5 +105,7 @@ function isonna(id) {
     popupElement.style.display = "block"
     popupImage.src = images[id];
 }
-
+function video(){
+    document.getElementById('media').src = 'videos/Opastus_nähtävyydet.mp4';
+}
 
