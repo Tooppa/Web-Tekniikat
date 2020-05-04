@@ -27,6 +27,7 @@ ul {
 h4 {
 	font-size: 30px;
 	letter-spacing: 3px;
+	color: #081D27;
 }
 
 /* Flex will line up the items in navigation ul list next to each other 
@@ -58,14 +59,14 @@ display flex with justify content space-around allows us to
 .nav_button div{
 	width: 25px;
 	height: 4px;
-	background-color: black;
+	background-color: #081D27;
 	margin: 5px;
 }
 
 /* Remmoves underlining from links and makes them black */
 a {
 	text-decoration: none;
-	color: black;
+	color: #081D27;
 }
 
 html, body{
@@ -158,8 +159,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 		/* moves the links to the right of the screen, 
 		so they are not visible */
 		transform: translateX(100%);
-		/* Transition will transition between the two "transform" attributes
-		in 0.5 seconds. ease-in option means that it has a slow start. */
+		
 		
 		
 	}
@@ -171,6 +171,8 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	
 	/*this is separately so that the transformation doesn't happen when the screen is resized*/
 	.nav_links {
+		/* Transition will transition between the two "transform" attributes
+		in 0.5 seconds. ease-in option means that it has a slow start. */
 		transition: transform 0.5s ease-in;
 	}
 	.popupImage {
