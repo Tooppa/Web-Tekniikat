@@ -74,23 +74,18 @@ html, body{
 	width: 100%;
 }
 /* Edits maps size and position*/
-/*#map{
-	height: calc(100% - 61px);
-	width: 100%;
-	position: fixed;
-	z-index: 0;
-}*/
+
 #map {
 	height: calc(100% - 61px);
 	width: 80%;
 	position:absolute;
 	left: 0;
-	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+	z-index: 0; 
   }
-  
+ /* Nähtävyydet sivun kuvien sijoitus*/ 
   #contactform {
 	position: relative;
-	z-index: 1; /* The z-index should be higher than Google Maps */
+	z-index: 1; 
 	width: 20%;
 	margin-left: 80% ;
 	padding: 0px;
@@ -190,13 +185,14 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	transform: translateX(0%);
 }
 /*edits buttons and text element in the facts page*/
-.generator {
-	padding-top: 2%;
+.generator, .thirdPage{
+	padding-top: 1%;
 	position: relative;
 	z-index: 1;
 	max-width: 75ch;
 	margin: auto;
 	text-align: center;
+	padding-bottom: 1%;
 }
 /*buttons in the facts page*/
 #vitsi, #fakta {
@@ -208,14 +204,7 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	margin: 10px;
 	transition: 0.5s;
 }
-/*buttons in images on the map page*/
-.imageButton {
-	border: 1px solid;
-	background: white;
-	width: 7em;
-	transition: 0.5s;
-	text-align: center;
-}
+
 /*creates hover effect to the buttons in the facts page*/
 #vitsi:hover, #fakta:hover , .imageButton:hover{
 	background: #9DC9DC;
@@ -244,12 +233,11 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	position: relative;
 	/* this calculates the video aspect ratio, which is 16:9 
 	and will make the video to appear with out borders */
-	padding-top: calc((90%/16)*9);
+	padding-top: calc((40%/16)*9);
 	overflow: hidden;
-	width: 90%;
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	top: 8vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -265,13 +253,14 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 .none {
 	list-style: none;
 }
-
+/* Kuvat nähtävyydet sivulla*/
 .image {
 	width: 200%;
 	height: auto;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
+/* Kuvien button ominaisuus*/
   .middle {
 	transition: .5s ease;
 	opacity: 0;
@@ -299,3 +288,12 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
   button {
 	background-color: #9DC9DC;
   }
+
+  /*buttons in images on the map page*/
+.imageButton {
+	border: 1px solid;
+	background: white;
+	width: 7em;
+	transition: 0.5s;
+	text-align: center;
+}

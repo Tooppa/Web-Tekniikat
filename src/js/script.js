@@ -1,4 +1,5 @@
-
+// When button on picture is clicked luku gets the pictures id
+// function is used to change the map location
 var luku = 0;
 function sijainti(clicked) {
     luku = clicked;
@@ -62,6 +63,12 @@ function initMap() {
             koordinaatit: { lat: 64.240475, lng: 23.817389 },
             image: '<img id="6" src="images/Kalajoki.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 14,
+            koordinaatit: { lat: 60.396233, lng: 25.654621 },
+            image: '<img id="7" src="images/porvoo.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         }
     ];
 
@@ -98,12 +105,15 @@ function isonna(id) {
         'images/vantaankoski-Suuri.jpg',
         'images/tiger-Suuri.jpg',
         'images/Rauma.jpg',
-        'images/Kalajoki.jpg'
+        'images/Kalajoki.jpg',
+        'images/porvoo.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
     popupElement.style.display = "block"
     popupImage.src = images[id];
 }
-
+function video(){
+    document.getElementById('media').src = 'videos/Opastus_nähtävyydet.mp4';
+}
 
