@@ -183,13 +183,14 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	transform: translateX(0%);
 }
 /*edits buttons and text element in the facts page*/
-.generator {
-	padding-top: 2%;
+.generator, .thirdPage{
+	padding-top: 1%;
 	position: relative;
 	z-index: 1;
 	max-width: 75ch;
 	margin: auto;
 	text-align: center;
+	padding-bottom: 1%;
 }
 /*buttons in the facts page*/
 #vitsi, #fakta {
@@ -230,12 +231,11 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 	position: relative;
 	/* this calculates the video aspect ratio, which is 16:9 
 	and will make the video to appear with out borders */
-	padding-top: calc((90%/16)*9);
+	padding-top: calc((40%/16)*9);
 	overflow: hidden;
-	width: 90%;
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	top: 8vh;
 	justify-content: center;
 	align-items: center;
 }
