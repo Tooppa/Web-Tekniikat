@@ -140,6 +140,12 @@ more: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 		overflow: hidden;
 	}
 	
+	html, body{
+		height: 100%;
+		width: 100%;
+		background-color: #DCE6E8;
+	}
+	
 	.nav_links {
 		position: absolute;
 		right: 0px;
