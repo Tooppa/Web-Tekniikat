@@ -81,6 +81,12 @@ function initMap() {
             koordinaatit: { lat: 60.435491, lng: 22.228664 },
             image: '<img id="9" src="images/Turunlinna.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 14,
+            koordinaatit: { lat: 69.059973, lng: 20.548734 },
+            image: '<img id="10" src="images/Rajapyykkipieni.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         }
     ];
 
@@ -120,8 +126,8 @@ function isonna(id) {
         'images/Kalajoki.jpg',
         'images/porvoo.jpg',
         'images/Joulupukin_paja.jpg',
-        'images/Turunlinna.jpg'
-        
+        'images/Turunlinna.jpg',       
+        'images/Rajapyykkipieni.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
