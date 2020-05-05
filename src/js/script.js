@@ -127,7 +127,7 @@ function isonna(id) {
         'images/porvoo.jpg',
         'images/Joulupukin_paja.jpg',
         'images/Turunlinna.jpg',       
-        'images/Rajapyykkipieni.jpg'
+        'images/Rajapyykki.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
