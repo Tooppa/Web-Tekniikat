@@ -69,6 +69,12 @@ function initMap() {
             koordinaatit: { lat: 60.396233, lng: 25.654621 },
             image: '<img id="7" src="images/porvoo.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 14,
+            koordinaatit: { lat: 69.059973, lng: 20.548734 },
+            image: '<img id="10" src="images/Rajapyykkipieni.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         }
     ];
 
@@ -106,7 +112,8 @@ function isonna(id) {
         'images/tiger-Suuri.jpg',
         'images/Rauma.jpg',
         'images/Kalajoki.jpg',
-        'images/porvoo.jpg'
+        'images/porvoo.jpg',
+        'images/Rajapyykkipieni.jpg'
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
