@@ -69,6 +69,18 @@ function initMap() {
             koordinaatit: { lat: 60.396233, lng: 25.654621 },
             image: '<img id="7" src="images/porvoo.jpg" width="300" height="200" onclick="isonna(id)"></img>',
             info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 13,
+            koordinaatit: { lat: 66.543576, lng: 25.847326 },
+            image: '<img id="8" src="images/Joulupukin_paja.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
+        },
+        {
+            zoom: 13,
+            koordinaatit: { lat: 60.435491, lng: 22.228664 },
+            image: '<img id="9" src="images/Turunlinna.jpg" width="300" height="200" onclick="isonna(id)"></img>',
+            info: '<p>Avaa isompana painamalla kuvaa</p>'
         }
     ];
 
@@ -106,7 +118,10 @@ function isonna(id) {
         'images/tiger-Suuri.jpg',
         'images/Rauma.jpg',
         'images/Kalajoki.jpg',
-        'images/porvoo.jpg'
+        'images/porvoo.jpg',
+        'images/Joulupukin_paja.jpg',
+        'images/Turunlinna.jpg'
+        
     ];
     const popupImage = document.getElementById('popupImage');
     const popupElement = document.getElementById('popup');
